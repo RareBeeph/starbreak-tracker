@@ -6,3 +6,5 @@ services:
       dockerfile: Dockerfile.local
     volumes:
       - ./backend:/code
+    ports:
+      - 3000:3000
