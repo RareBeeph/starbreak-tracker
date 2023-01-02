@@ -25,6 +25,7 @@ target-version = [ "py39",]
 [tool.poetry.dependencies]
 python = "^3.10"
 flask = "^2.2.2"
+peewee = "^3.15.4"
 
 [tool.poetry.scripts]
 starbreak = 'backend.app:run'
