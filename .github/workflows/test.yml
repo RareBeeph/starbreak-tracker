@@ -1,0 +1,14 @@
+name: Testing
+on: [push]
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Pull base images
+        run: docker-compose pull
+      - name: Start the containers
+        run: scripts/ci-start.sh
+      - name: pytest
+        run: docker-compose exec -T backend poetry run pytest
