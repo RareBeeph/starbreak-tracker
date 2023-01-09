@@ -1,6 +1,8 @@
 from .item import Item
+from peewee import BitField
+from peewee import BooleanField
 
 
 class Drop(Item):
-    modifiers = None  # List containing modifier instances, possibly including duplicates
-    isEliteBossDrop = None  # Boolean keeping track of whether the weapon was expected to drop with 0-3 modifiers, or 1-4, so as to not mix samples with different odds
+    modifiers = BitField()  # Include repeats separate from unrepeated forms
+    isEliteBossDrop = BooleanField()  # Distinguishes 0-3 mod and 1-4 mod samples

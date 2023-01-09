@@ -1,5 +1,6 @@
 from .base import BaseModel
+from peewee import TextField
 
 
 class Modifier(BaseModel):
-    name = None  # String
+    name = TextField()
