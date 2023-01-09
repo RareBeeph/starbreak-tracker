@@ -4,6 +4,6 @@ from peewee import TextField
 
 
 class Item(BaseModel):
-    equipSlot = TextField()  # Might be better as an enum
+    equip_slot = TextField()  # Might be better as an enum
     name = TextField()
-    supportedModifiers = BitField()  # Include repeats separate from unrepeated forms
+    supported_modifiers = BitField()  # Include repeats separate from unrepeated forms
