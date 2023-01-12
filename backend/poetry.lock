@@ -187,6 +187,23 @@ optional = false
 python-versions = ">=3.7"
 
 [[package]]
+name = "marshmallow"
+version = "3.19.0"
+description = "A lightweight library for converting complex datatypes to and from native Python datatypes."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+packaging = ">=17.0"
+
+[package.extras]
+dev = ["flake8 (==5.0.4)", "flake8-bugbear (==22.10.25)", "mypy (==0.990)", "pre-commit (>=2.4,<3.0)", "pytest", "pytz", "simplejson", "tox"]
+docs = ["alabaster (==0.7.12)", "autodocsumm (==0.2.9)", "sphinx (==5.3.0)", "sphinx-issues (==3.0.1)", "sphinx-version-warning (==1.1.2)"]
+lint = ["flake8 (==5.0.4)", "flake8-bugbear (==22.10.25)", "mypy (==0.990)", "pre-commit (>=2.4,<3.0)"]
+tests = ["pytest", "pytz", "simplejson"]
+
+[[package]]
 name = "mccabe"
 version = "0.7.0"
 description = "McCabe checker, plugin for flake8"
@@ -206,7 +223,7 @@ python-versions = "*"
 name = "packaging"
 version = "22.0"
 description = "Core utilities for Python packages"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.7"
 
@@ -353,7 +370,7 @@ watchdog = ["watchdog"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "9f7f61cd1bafbe377ed54345b6d90f19551a3e4527566e8263c1b1092d9f8f44"
+content-hash = "7b730a04d6cab852f5b333c9ac1f8b1a4b68d3c53699dc6aac9dda5b58a09512"
 
 [metadata.files]
 anyio = [
@@ -463,6 +480,10 @@ markupsafe = [
     {file = "MarkupSafe-2.1.1-cp39-cp39-win32.whl", hash = "sha256:d4306c36ca495956b6d568d276ac11fdd9c30a36f1b6eb928070dc5360b22e1c"},
     {file = "MarkupSafe-2.1.1-cp39-cp39-win_amd64.whl", hash = "sha256:46d00d6cfecdde84d40e572d63735ef81423ad31184100411e6e3388d405e247"},
     {file = "MarkupSafe-2.1.1.tar.gz", hash = "sha256:7f91197cc9e48f989d12e4e6fbc46495c446636dfc81b9ccf50bb0ec74b91d4b"},
+]
+marshmallow = [
+    {file = "marshmallow-3.19.0-py3-none-any.whl", hash = "sha256:93f0958568da045b0021ec6aeb7ac37c81bfcccbb9a0e7ed8559885070b3a19b"},
+    {file = "marshmallow-3.19.0.tar.gz", hash = "sha256:90032c0fd650ce94b6ec6dc8dfeb0e3ff50c144586462c389b81a07205bedb78"},
 ]
 mccabe = [
     {file = "mccabe-0.7.0-py2.py3-none-any.whl", hash = "sha256:6c2d30ab6be0e4a46919781807b4f0d834ebdd6c6e3dca0bda5a15f863427b6e"},

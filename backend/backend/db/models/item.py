@@ -1,8 +1,8 @@
 from .base import BaseModel
-from peewee import BigBitField, TextField
+from peewee import BitField, TextField
 
 
 class Item(BaseModel):
     equip_slot = TextField()  # Might be better as an enum
     name = TextField()
-    supported_modifiers = BigBitField()  # Include repeats separate from unrepeated forms
+    supported_modifiers = BitField()  # Include repeats separate from unrepeated forms
