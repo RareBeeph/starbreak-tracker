@@ -1,8 +1,6 @@
 from flask import Blueprint
 from flask import request
 
-import json
-
 from backend.db.models import Item
 from backend.serializers import ItemSchema
 
