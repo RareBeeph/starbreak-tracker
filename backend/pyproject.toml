@@ -28,6 +28,7 @@ python = "^3.10"
 flask = "^2.2.2"
 peewee = "^3.15.4"
 marshmallow = "^3.19.0"
+faker = "^16.6.0"
 
 [tool.poetry.scripts]
 starbreak = 'backend.app:run'
