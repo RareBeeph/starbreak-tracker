@@ -20,6 +20,9 @@ def clean_fill_items(test_client) -> None:
 
     for i in range(FILL_QUANTITY):  # loop runs every time the fixture is accessed
         Item(name=fake.name(), equip_slot=fake.ean(length=13)).save(),
+
+
+def test_memory_db_fixture() -> None:
     assert Item.select().count() == FILL_QUANTITY
 
 
